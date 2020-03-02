@@ -1,6 +1,6 @@
 {
     "name": "excel-to-database",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "package that easily transfers spreadsheets to the database.",
     "main": "./lib/index.js",
     "bin": {
