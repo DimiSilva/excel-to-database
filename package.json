@@ -1,0 +1,36 @@
+{
+    "name": "excel-to-database",
+    "version": "1.0.0",
+    "description": "package that easily transfers spreadsheets to the database.",
+    "main": "./lib/index.js",
+    "bin": {
+        "excelTransfer": "./bin/excel_to_database.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DimiSilva/excel-to-database.git"
+    },
+    "keywords": [
+        "package",
+        "npm",
+        "excel",
+        "spreadsheets",
+        "database",
+        "nodejs"
+    ],
+    "author": "Dimi Silva",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DimiSilva/excel-to-database/issues"
+    },
+    "homepage": "https://github.com/DimiSilva/excel-to-database#readme",
+    "preferGlobal": true,
+    "dependencies": {
+        "exceljs": "^3.8.0",
+        "minimist": "^1.2.0",
+        "mongodb": "^3.5.4"
+    }
+}
