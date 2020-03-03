@@ -6,7 +6,7 @@
 
 ---
 
-    npm install -g excel-to-database or yarn global add excel-to-database
+    npm install -g excel-to-database
 
 ---
 
@@ -18,7 +18,7 @@
 
     excelTransfer -d mongo -c mongodb://localhost/local -s C:sheet.xlsx
 
-    -d is database, only mongo is available in the moment
+    -d is database, only mongo is available in the moment (default)
     -c is connection string
     -s is the path to the worksheet (supports only xlsx in the moment)
 
@@ -28,15 +28,13 @@
 
 ---
 
-![spreedsheet format example 1](https://i.ibb.co/SyWTKKy/worksheet-example-1.png) ![spreedsheet format example 2](https://i.ibb.co/mD7hbqH/worksheet-example-2.png)
+#### insert
 
----
+![spreedsheet format example 1](https://i.ibb.co/QKzLXL7/transfer-to-database-example-1.png)
 
-### Obs
+#### update
 
----
-
-    Only tested in windows
+![spreedsheet format example 2](https://i.ibb.co/GkPjR0D/transfer-to-database-example-2.png)
 
 ---
 
@@ -50,3 +48,9 @@
 >
 > > -   Removed mongo warning
 > > -   Readme updated
+>
+> 1.0.2
+>
+> > -   Fixed spelling errors
+> > -   Fixed connection string to lower case
+> > -   Mongo as default database
