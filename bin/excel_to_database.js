@@ -32,6 +32,8 @@ const readAndTreatArguments = async args => {
     if (args.help) Help()(process.exit())
     if (args.version) Version()(process.exit())
 
+    if (!args["database-type"]) args["database-type"] = "mongo"
+
     chackDatabaseType(args["database-type"])
     checkConnectionString(args["connection-string"])
     checkSpreadsheetPath(args["spreadsheet-path"])
