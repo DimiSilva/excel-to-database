@@ -16,18 +16,15 @@ const startup = async () => {
 }
 
 const getArguments = () =>
-    Minimist(
-        process.argv.slice(2).map(arg => arg.toLowerCase()),
-        {
-            alias: {
-                h: "help",
-                v: "version",
-                d: "database-type",
-                c: "connection-string",
-                s: "spreadsheet-path",
-            },
-        }
-    )
+    Minimist(process.argv.slice(2), {
+        alias: {
+            h: "help",
+            v: "version",
+            d: "database-type",
+            c: "connection-string",
+            s: "spreadsheet-path",
+        },
+    })
 
 const readAndTreatArguments = async args => {
     if (!args) messageAndClose("invalid arguments", 9)
